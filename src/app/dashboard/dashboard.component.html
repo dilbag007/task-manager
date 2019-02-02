@@ -1,0 +1,70 @@
+
+<div class="container-fluid">
+  <div class="rows">
+                       <!-- siderbar -->
+     <div class="col-md-3" style="height:700px; background-color: black ;margin-top: 5px">
+      <div class="col">
+                         <!-- search box -->
+        <input type="text" style="width:80%; margin: 35px; background-color:whitesmoke" >
+      </div>
+      <div class="col-md-12">
+        <button  (click)="scall()"> Dashboard</button>
+      </div>
+      <div class="col-md-12">
+          <select id="opt">
+            <option>User's</option>
+            <option>View</option>
+          </select>
+        </div>
+        <div class="col-md-12">
+            <select id="opt">
+                <option>Master</option>
+                <option>Add</option>
+              </select>
+          </div>
+     </div>
+                           <!-- content -->
+     <div class=" col-md-9" style="height:700px;  margin-top: 5px">
+                           <!-- header  -->
+        <div  style="height:100px;width:100%; background-color: blue">
+                          <!-- admin pannel -->
+            <h1>Admin Pannel - Todo</h1> 
+            <select class="hselect">
+              
+                <option selected value="Admin Name">Name</option>
+                <option value="post">post</option>
+                <option value="date">date</option>
+                <option value="place">place</option>
+              
+            </select>
+           </div>
+                            <!-- Dashboard -->
+           <h3>Dashboard</h3>
+          <table>
+            <tr>
+              <td>firstname</td>
+              <td>lastname</td>
+              <td>email</td>
+            </tr>
+            <tr *ngFor="let user of users">
+              <td>{{user.firstname}}</td>
+              <td>{{user.lastname}}</td>
+              <td>{{user.email}}</td>
+            </tr>
+          </table>
+         
+            <!-- <h3>All registered users:</h3>
+
+            <pre>            <ul>
+                <li *ngFor="let user of users">
+                   firstname: {{user.firstname}}      lastname:{{user.lastname}}      email:{{user.email}}      contactnumber:{{user.contactnumber}} <br>
+                                      </li>
+            </ul>
+          </pre>
+         <br> -->
+              <!-- datae -->
+          <input type="date" >
+       
+     </div>
+  </div>
+</div>

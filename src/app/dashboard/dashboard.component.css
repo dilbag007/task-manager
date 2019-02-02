@@ -1,0 +1,24 @@
+h1{
+    padding-top: 20px;
+    padding-left: 20px;
+    color:white;
+}
+.hselect{
+    float:right;
+    width:80px;
+    margin-top: -20px;
+}
+button{
+    margin-top:30px;
+    margin-left: 30px;
+    width:80%;
+}
+#opt{
+    margin-top:30px;
+    margin-left: 30px;
+    width:80%;height: 25px;
+    background-color: silver;
+}
+td{
+    padding: 20px;
+}
